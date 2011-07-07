@@ -11,6 +11,7 @@
 @implementation MainViewController
 
 @synthesize managedObjectContext=_managedObjectContext;
+@synthesize scrollView = _scrollView;
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

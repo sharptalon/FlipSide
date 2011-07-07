@@ -11,6 +11,7 @@
 #import <CoreData/CoreData.h>
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+    UIScrollView *_scrollView;
 
 }
 
@@ -18,5 +19,6 @@
 - (IBAction)showInfo:(id)sender;
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 
 @end
