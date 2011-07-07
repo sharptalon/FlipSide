@@ -27,6 +27,10 @@
 		4D615EDA13C606E70006A676 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D615ED813C606E70006A676 /* InfoPlist.strings */; };
 		4D615EDD13C606E70006A676 /* FlipSideTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4D615EDC13C606E70006A676 /* FlipSideTests.h */; };
 		4D615EDF13C606E70006A676 /* FlipSideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D615EDE13C606E70006A676 /* FlipSideTests.m */; };
+		4D615EFD13C62C390006A676 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D615EFB13C62C390006A676 /* FrontViewController.m */; };
+		4D615EFE13C62C390006A676 /* FrontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D615EFC13C62C390006A676 /* FrontViewController.xib */; };
+		4D615F0213C62CE80006A676 /* BackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D615F0013C62CE80006A676 /* BackViewController.m */; };
+		4D615F0313C62CE80006A676 /* BackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D615F0113C62CE80006A676 /* BackViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,12 @@
 		4D615EDB13C606E70006A676 /* FlipSideTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlipSideTests-Prefix.pch"; sourceTree = "<group>"; };
 		4D615EDC13C606E70006A676 /* FlipSideTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipSideTests.h; sourceTree = "<group>"; };
 		4D615EDE13C606E70006A676 /* FlipSideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipSideTests.m; sourceTree = "<group>"; };
+		4D615EFA13C62C390006A676 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
+		4D615EFB13C62C390006A676 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
+		4D615EFC13C62C390006A676 /* FrontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FrontViewController.xib; sourceTree = "<group>"; };
+		4D615EFF13C62CE80006A676 /* BackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackViewController.h; sourceTree = "<group>"; };
+		4D615F0013C62CE80006A676 /* BackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackViewController.m; sourceTree = "<group>"; };
+		4D615F0113C62CE80006A676 /* BackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,12 @@
 				4D615EC713C606E70006A676 /* FlipsideView.xib */,
 				4D615EB913C606E60006A676 /* FlipSide.xcdatamodeld */,
 				4D615EAE13C606E60006A676 /* Supporting Files */,
+				4D615EFA13C62C390006A676 /* FrontViewController.h */,
+				4D615EFB13C62C390006A676 /* FrontViewController.m */,
+				4D615EFC13C62C390006A676 /* FrontViewController.xib */,
+				4D615EFF13C62CE80006A676 /* BackViewController.h */,
+				4D615F0013C62CE80006A676 /* BackViewController.m */,
+				4D615F0113C62CE80006A676 /* BackViewController.xib */,
 			);
 			path = FlipSide;
 			sourceTree = "<group>";
@@ -246,6 +262,8 @@
 				4D615EBE13C606E60006A676 /* MainWindow.xib in Resources */,
 				4D615EC313C606E70006A676 /* MainView.xib in Resources */,
 				4D615EC813C606E70006A676 /* FlipsideView.xib in Resources */,
+				4D615EFE13C62C390006A676 /* FrontViewController.xib in Resources */,
+				4D615F0313C62CE80006A676 /* BackViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +304,8 @@
 				4D615EBB13C606E60006A676 /* FlipSide.xcdatamodeld in Sources */,
 				4D615EC113C606E60006A676 /* MainViewController.m in Sources */,
 				4D615EC613C606E70006A676 /* FlipsideViewController.m in Sources */,
+				4D615EFD13C62C390006A676 /* FrontViewController.m in Sources */,
+				4D615F0213C62CE80006A676 /* BackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

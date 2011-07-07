@@ -10,15 +10,22 @@
 
 #import <CoreData/CoreData.h>
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, UIScrollViewDelegate> {
     UIScrollView *_scrollView;
+    UIPageControl *_pageControl;
+    NSMutableArray *_viewControllers;
+    
+    BOOL _pageControlUsed;
 
 }
 
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
+
+@property (nonatomic, retain) NSMutableArray *viewControllers;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)showInfo:(id)sender;
-
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+- (void)loadScrollViewWithPage:(int)page;
 
 @end
