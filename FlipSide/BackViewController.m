@@ -63,11 +63,12 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)flipsideViewControllerIsFinishing:(FlipsideViewController *)controller {
+- (BOOL)flipsideViewControllerIsFinishing:(FlipsideViewController *)controller {
     NSString *title = [NSString stringWithFormat:@"Done with Back %d", _page + 1];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
     [alert release];
+    return YES;
 }
 
 @end

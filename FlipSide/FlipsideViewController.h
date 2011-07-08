@@ -26,7 +26,7 @@
 @end
 
 @protocol FlipsideViewNestedControllerDelegate
-- (void)flipsideViewControllerIsFinishing:(FlipsideViewController *)controller;
+- (BOOL)flipsideViewControllerIsFinishing:(FlipsideViewController *)controller;
 @end
 
 

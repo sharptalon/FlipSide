@@ -54,9 +54,10 @@
 
 - (IBAction)done:(id)sender
 {
-    [self.nestedController flipsideViewControllerIsFinishing:self];
-    [self.delegate flipsideViewControllerDidFinish:self];
-    [self.nestedController.view removeFromSuperview];
+    if ([self.nestedController flipsideViewControllerIsFinishing:self]) {
+        [self.delegate flipsideViewControllerDidFinish:self];
+        [self.nestedController.view removeFromSuperview];
+    }
 }
 
 @end

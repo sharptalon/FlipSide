@@ -50,7 +50,7 @@
 						<string key="NSFrameSize">{320, 44}</string>
 						<reference key="NSSuperview" ref="249263867"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="480626131"/>
+						<reference key="NSNextKeyView" ref="463765542"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -70,7 +70,7 @@
 							</object>
 						</object>
 					</object>
-					<object class="IBUIView" id="480626131">
+					<object class="IBUIView" id="463765542">
 						<reference key="NSNextResponder" ref="249263867"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{0, 44}, {320, 416}}</string>
@@ -80,10 +80,11 @@
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace" id="376064445">
+							<object class="NSColorSpace" key="NSCustomColorSpace" id="953767874">
 								<int key="NSID">2</int>
 							</object>
 						</object>
+						<bool key="IBUIClipsSubviews">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</object>
@@ -94,7 +95,7 @@
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC4yNQA</bytes>
-					<reference key="NSCustomColorSpace" ref="376064445"/>
+					<reference key="NSCustomColorSpace" ref="953767874"/>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
@@ -126,7 +127,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">nestedView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="480626131"/>
+						<reference key="destination" ref="463765542"/>
 					</object>
 					<int key="connectionID">50</int>
 				</object>
@@ -157,7 +158,7 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="871675769"/>
-							<reference ref="480626131"/>
+							<reference ref="463765542"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -186,7 +187,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">47</int>
-						<reference key="object" ref="480626131"/>
+						<reference key="object" ref="463765542"/>
 						<reference key="parent" ref="249263867"/>
 					</object>
 				</object>
