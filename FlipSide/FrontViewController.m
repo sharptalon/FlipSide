@@ -7,6 +7,8 @@
 //
 
 #import "FrontViewController.h"
+#import "BackViewController.h"
+#import "FlipSideAppDelegate.h"
 
 
 @implementation FrontViewController
@@ -49,8 +51,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_numberLabel setText:[NSString stringWithFormat:@"%d", _page]];
-    //[self.view setFrame:CGRectMake(0, 0, 320, 400)];
+    [_numberLabel setText:[NSString stringWithFormat:@"%d", _page + 1]];
 
 }
 
@@ -65,6 +66,12 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)showInfo:(id)sender {
+    BackViewController *back = [[BackViewController alloc] initWithPageNumber:_page];
+    FlipSideAppDelegate *appDelegate = (FlipSideAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.mainViewController showInfo:sender withController:back];
 }
 
 @end

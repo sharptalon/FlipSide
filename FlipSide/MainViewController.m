@@ -77,6 +77,7 @@ static NSUInteger kNumberOfPages = 3;
     }
 }
 
+
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
     if (_pageControlUsed) {
         // do nothing - the scroll was initiated from the page control, not the user dragging
@@ -122,15 +123,16 @@ static NSUInteger kNumberOfPages = 3;
     [self dismissModalViewControllerAnimated:YES];
 }
 
-- (IBAction)showInfo:(id)sender
+- (IBAction)showInfo:(id)sender withController:(UIViewController *)infoController
 {    
-    FlipsideViewController *controller = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil];
-    controller.delegate = self;
+    FlipsideViewController *flipController = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil];
+    flipController.nestedController = infoController;
+    flipController.delegate = self;
     
-    controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentModalViewController:controller animated:YES];
+    flipController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:flipController animated:YES];
     
-    [controller release];
+    [flipController release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

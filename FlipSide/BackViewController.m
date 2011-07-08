@@ -8,7 +8,6 @@
 
 #import "BackViewController.h"
 
-
 @implementation BackViewController
 
 @synthesize numberLabel = _numberLabel;
@@ -48,8 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_numberLabel setText:[NSString stringWithFormat:@"%d", _page]];
-    //[self.view setFrame:CGRectMake(0, 0, 320, 400)];
+    [_numberLabel setText:[NSString stringWithFormat:@"%d", _page + 1]];
 }
 
 - (void)viewDidUnload
@@ -63,6 +61,13 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)flipsideViewControllerIsFinishing:(FlipsideViewController *)controller {
+    NSString *title = [NSString stringWithFormat:@"Done with Back %d", _page + 1];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
 }
 
 @end

@@ -12,6 +12,8 @@
 @implementation FlipsideViewController
 
 @synthesize delegate=_delegate;
+@synthesize nestedView=_nestedView;
+@synthesize nestedController=_nestedController;
 
 - (void)dealloc
 {
@@ -31,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.nestedView addSubview:self.nestedController.view];
     self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];  
 }
 
@@ -51,7 +54,9 @@
 
 - (IBAction)done:(id)sender
 {
+    [self.nestedController flipsideViewControllerIsFinishing:self];
     [self.delegate flipsideViewControllerDidFinish:self];
+    [self.nestedController.view removeFromSuperview];
 }
 
 @end

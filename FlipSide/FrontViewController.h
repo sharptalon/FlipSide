@@ -17,5 +17,6 @@
 @property (nonatomic, retain) IBOutlet UILabel *numberLabel;
 
 - (id)initWithPageNumber:(NSInteger)page;
+- (IBAction)showInfo:(id)sender;
 
 @end

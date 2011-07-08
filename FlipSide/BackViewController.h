@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlipsideViewController.h"
 
 
-@interface BackViewController : UIViewController {
+@interface BackViewController : UIViewController <FlipsideViewNestedControllerDelegate> {
     UILabel *_numberLabel;
     NSInteger _page;
 }

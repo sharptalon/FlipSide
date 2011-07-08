@@ -25,7 +25,7 @@
 @property (nonatomic, retain) NSMutableArray *viewControllers;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
-- (IBAction)showInfo:(id)sender;
+- (IBAction)showInfo:(id)sender withController:(UIViewController *)controller;
 - (void)loadScrollViewWithPage:(int)page;
 
 @end
