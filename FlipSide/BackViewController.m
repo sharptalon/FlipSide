@@ -2,6 +2,13 @@
 //  BackViewController.m
 //  FlipSide
 //
+//  This is a sample controller representing a back page in the application.
+//  It just displays the page number, and throws up a dialog box when the "Done" button is pressed,
+//  via the flipsideViewControllerIsFinishing: method
+//  For a real app, the flipsideViewControllerIsFinishing: method would be used to validate the
+//  user's input, returning NO and displaying some kind of error message in the input is not valid,
+//  or updating the data model and returning YES if the input is valid.
+//
 //  Created by Mark A. Kolb on 7/7/11.
 //  Copyright 2011 Sharp Talon Software. All rights reserved.
 //

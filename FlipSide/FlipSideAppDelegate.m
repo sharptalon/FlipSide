@@ -2,6 +2,9 @@
 //  FlipSideAppDelegate.m
 //  FlipSide
 //
+//  This is the main app file. It sets up the managed object context for Core Data, and the main view controller.
+//  Should not need customization.
+//
 //  Created by Mark A. Kolb on 7/7/11.
 //  Copyright 2011 Sharp Talon Software. All rights reserved.
 //

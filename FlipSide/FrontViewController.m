@@ -2,6 +2,9 @@
 //  FrontViewController.m
 //  FlipSide
 //
+//  This is a sample controller representing a front page in the application.
+//  It just displays the page number, and also defines a showInfo: method for creating and showing a corresponding back page.
+//
 //  Created by Mark A. Kolb on 7/7/11.
 //  Copyright 2011 Sharp Talon Software. All rights reserved.
 //

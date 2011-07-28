@@ -2,6 +2,13 @@
 //  MainViewController.m
 //  FlipSide
 //
+//  This class implements the top-level scrolling and flipping behavior.
+//  It needs to be customized to create the appropriate front-page view controllers via the viewDidLoad: and loadScrollViewWithPage: methods.
+//
+//  Note also that this class implements the FlipsideViewControllerDelegate protocol, which means its flipsideViewControllerDidFinish: method
+//  will be called whenever the user is done using any back page. There may be some circumstances under which you would want to customise
+//  this method, as well.
+//
 //  Created by Mark A. Kolb on 7/7/11.
 //  Copyright 2011 Sharp Talon Software. All rights reserved.
 //
